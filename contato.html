@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja de Cupcakes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contact">
+    <header>
+        <img src="imagens/LOGO1.jpg" alt="Logo da Loja de Cupcakes">
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="entrar.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-form">            
+                <h2>FALE CONOSCO</h2>            
+                <form class="form" action="salva_mensagem.php" method="POST" id="myForm">
+                    <br/>
+                    <input type="text" placeholder="Digite seu nome completo" class="field" name="nome">
+                    <br/>
+                    <input type="email" placeholder="Digite seu e-mail de contato" class="field" name="email">
+                    <br/>
+                    <input type="text" placeholder="Digite um assunto" class="field" name="assunto">
+                    <br/>
+                    <textarea name="mensagem" placeholder="Digite seu texto aqui" class="field" rows="4"></textarea>
+                    <br/>
+                    <input type="submit" class="btn" name="enviar" value="ENVIAR">
+                    <button type="button" class="btn" onclick="resetForm()">Limpar</button>
+                </form>
+        </section>
+
+        <div class="contact-info">
+            <img src="imagens/redes-sociais.jpg" alt="Ícone Redes Sociais">
+        </div> 
+
+        <div class="contact-details">
+            <p>Para contato telefônico e WhatsApp, ligue ou envie mensagem para: <a href="tel:+551234567890">+55 (12) 3456-7890</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/mariosssousa/">https://www.instagram.com/mariosssousa/</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/mariosergio.silvasousa">https://www.facebook.com/mariosergio.silvasousa</a></p>
+        </div>
+    </main>
+    <script>
+        function resetForm() {
+          // Obtém a referência do formulário pelo ID
+          var form = document.getElementById("myForm");
+    
+          // Reseta o formulário
+          form.reset();
+        }
+      </script>
+
+    <footer>
+        <p>&copy; 2023 Loja de Cupcakes</p>
+    </footer>
+</body>
+
+</html>
